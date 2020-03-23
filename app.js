@@ -17,10 +17,28 @@ document.getElementById("current-1").textContent = "0";
 
 var diceDom = document.querySelector(".dice ");
 diceDom.style.display = "none";
-
+//шоог шидэх эвент линстенер
 document.querySelector(".btn-roll").addEventListener("click", function() {
+  //1-6 дотор санамсаргүй тоо гаргаж авна
   var diceNumber = Math.floor(Math.random() * 6) + 1;
+  //Шооны зурагыг веб дээр гаргаж ирнэ
+  diceDom.style.display = "block";
+  //буусан санамсаргүй тоонд харгалзах шооны зурагыг веб дээр гаргаж ирнэ
+  diceDom.src = "dice-" + diceNumber + ".png";
 
-  document.querySelector(".dice ").style.display = "block";
-  document.querySelector(".dice ").src = "dice-" + diceNumber + ".png";
+  // буусан тоо нь 1 ялгаатай бол тоглогчын ээлжийн оноог нэмэгдүүлнэ
+  if (diceNumber !== 1) {
+    //1 ээс ялгаатай тоо буулаа тоглогчын оноогд нэмж өгнө.
+    roundscore = roundscore + diceNumber;
+    document.getElementById("current-" + activeplayer).textContent = roundscore;
+  } else {
+      //тоглогчын цуглуулсан оноог 00 болгоно
+    document.getElementById("current-" + activeplayer).textContent = 0;
+    //Тоглогчын ээлжийг нөгөө тоглогч руу шилжүүлнэ
+
+    // 1-тэй тэнцүү учир тоглогчын ээлжийг солиж өгнө.
+    activeplayer === 0 ? (activeplayer = 1) : (activeplayer = 0);
+    // Тоглогчын улааг цэгийг шилжүүлнэ
+    document.querySelector(".player-0-panel").classList.
+  }
 });
