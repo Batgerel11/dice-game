@@ -1,7 +1,7 @@
 var activePlayer;
 var isGameOver;
 var scores;
-
+var mm = 'mongollia';
 var roundScore;
 var test;
 test = "HEELLLOOO"
@@ -41,7 +41,7 @@ function initGame() {
 
 // Шоо шидэх хэсэг
 
-document.querySelector(".btn-roll").addEventListener("click", function() {
+document.querySelector(".btn-roll").addEventListener("click", function () {
   if (isGameOver !== true) {
     var diceNumber = Math.floor(Math.random() * 6) + 1;
 
@@ -64,7 +64,7 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
   }
 });
 
-document.querySelector(".btn-hold").addEventListener("click", function() {
+document.querySelector(".btn-hold").addEventListener("click", function () {
   if (isGameOver !== true) {
     scores[activePlayer] = scores[activePlayer] + roundScore;
     document.getElementById("score-" + activePlayer).textContent =
