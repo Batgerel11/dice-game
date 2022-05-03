@@ -4,7 +4,7 @@ var scores;
 var mm = 'mongolliannnnnnnnnnnnnnnn';
 var roundScore;
 var test;
-test = "HE"
+test = "HELLO"
 
 var diceDom = document.querySelector(".dice");
 diceDom.style.display = "none";
