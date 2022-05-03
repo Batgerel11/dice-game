@@ -1,10 +1,10 @@
 var activePlayer;
 var isGameOver;
 var scores;
-var mm = 'mongollia';
+var mm = 'mongolliannnnnnnnnnnnnnnn';
 var roundScore;
 var test;
-test = "HEELLLOOO WOOOOORRRRRLLLLLDDD dddddddddddddddddddddddd dfasfd Batgerel"
+test = "HE"
 
 var diceDom = document.querySelector(".dice");
 diceDom.style.display = "none";
