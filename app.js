@@ -4,7 +4,7 @@ var scores;
 
 var roundScore;
 var test;
-test = "HEELLLOOO WOOOOORRRRRLLLLLDDD dddddddddddddddddddddddd"
+test = "HEELLLOOO WOOOOORRRRRLLLLLDDD dddddddddddddddddddddddd dfasfd"
 
 var diceDom = document.querySelector(".dice");
 diceDom.style.display = "none";
