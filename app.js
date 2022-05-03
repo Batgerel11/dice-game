@@ -4,7 +4,7 @@ var scores;
 var mm = 'mongollia';
 var roundScore;
 var test;
-test = "HEELLLOOO"
+test = "HEELLLOOO WOOOOORRRRRLLLLLDDD dddddddddddddddddddddddd dfasfd"
 
 var diceDom = document.querySelector(".dice");
 diceDom.style.display = "none";
