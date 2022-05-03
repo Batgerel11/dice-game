@@ -3,6 +3,8 @@ var isGameOver;
 var scores;
 
 var roundScore;
+var test;
+test = "HEELLLOOO"
 
 var diceDom = document.querySelector(".dice");
 diceDom.style.display = "none";
